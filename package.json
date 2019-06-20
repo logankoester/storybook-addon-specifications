@@ -61,6 +61,7 @@
     "react-dom": "^0.14.7 || ^15.0.0 || ^16.0.0"
   },
   "files": [
+    "register.js",
     "dist/"
   ],
   "jest": {
