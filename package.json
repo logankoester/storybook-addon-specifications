@@ -11,7 +11,8 @@
     "babel": "babel --ignore __tests__ src --out-dir dist",
     "jest": "jest",
     "mocha": "mocha --compilers js:babel-register --require babel-polyfill ./.storybook/__conf__/mochaMockConfig.js ./.storybook/__conf__/enzymeConfig.js \"./.storybook/**/*.mocha.stories.js\"",
-    "test": "npm-run-all babel jest mocha"
+    "test": "npm-run-all babel jest mocha",
+    "prepare": "npm-run-all clean babel"
   },
   "repository": {
     "type": "git",
@@ -59,6 +60,9 @@
     "react": "^0.14.7 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.7 || ^15.0.0 || ^16.0.0"
   },
+  "files": [
+    "dist/"
+  ],
   "jest": {
     "setupFiles": [
       "./.storybook/__conf__/jestMockConfig.js",
